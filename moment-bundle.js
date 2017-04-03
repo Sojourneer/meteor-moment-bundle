@@ -52,5 +52,3 @@ if(Meteor.isClient) {
     });
 }
 
-debugger;
-//console.log(data);
