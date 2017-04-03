@@ -15,8 +15,9 @@ if(Meteor.isServer) {
             var json = JSON.parse(Assets.getText('moment-timezone/data/packed/latest.json'));
             console.log("Read timezone data from file");
             tzCollection.insert(json);
-        }
-        moment.tz.load(data[0]);
+            moment.tz.load(json);
+        } else
+            moment.tz.load(data[0]);
         console.log("Check Asia/Tokyo tz: ", moment.tz("Asia/Tokyo") ? "exists" : "missing");
     });
 
