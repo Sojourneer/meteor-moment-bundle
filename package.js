@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
+  api.use("mongo");
 
   api.add_files('moment/min/moment.min.js', ['client','server'], {bare:true});
 
@@ -22,7 +23,8 @@ Package.onUse(function(api) {
   api.add_files('moment-recur/moment-recur.js', ['client','server'], {bare:true});
   api.add_files('moment-timezone/moment-timezone.js', ['client','server'], {bare:true});
   api.add_files('moment-timezone/moment-timezone-utils.js', ['client','server'], {bare:true});
-
+  api.add_files('moment-timezone/data/packed/latest.json', ['client','server'], {isAsset:true});
+  
   api.addFiles('moment-bundle.js');
 
   api.export('moment', ['client', 'server']);
