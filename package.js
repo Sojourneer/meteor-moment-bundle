@@ -1,6 +1,6 @@
 Package.describe({
   name: 'sojourneer:moment-bundle',
-  version: '0.1.1',
+  version: '0.1.2',
   // Minimalist packaging for momentjs modules
   summary: 'Minimalist client/server packaging for momentjs modules',
   // URL to the Git repository containing the source code for this package.
