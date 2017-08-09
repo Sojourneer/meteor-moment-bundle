@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'moment-bundle',
+  name: 'sojourneer:moment-bundle',
   version: '0.1.1',
   // Minimalist packaging for momentjs modules
-  summary: '',
+  summary: 'Minimalist client/server packaging for momentjs modules',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/Sojourneer/meteor-moment-bundle.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
